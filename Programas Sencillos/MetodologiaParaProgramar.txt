@@ -1,0 +1,77 @@
+# -*- coding: cp1252 -*-
+Metodologia para la construccion de programas
+
+1.- Analizar el problema.
+
+Entender profundamente "cual es el problema" que se desea resolver,
+incluir el contexto en el cual se usará.
+
+2.- Especificar la solución
+
+Aquí se describe "que hace el programa", decidir cuales son los datos
+de entrada, de salida y que relacion tienen entre ellos.
+
+3.- Diseñar la solucion
+
+Aquí atacamos al problema, "como vamos a resolver", cuales son los algoritmos
+y estructur de datos que usaremos, realizar un "pseudo-codigo"
+
+4.- Implemtar el diseño
+En este punto se tiene que "traducir el pseudo-codigo" a un lenguaje de programacion
+
+5.- Probar el programa
+Probar cada parte por separado e integrarlas, utizar un depurador para
+"descubir los errores", documentar los resultados obtenidos.
+
+6.- Mantenimiento
+Gracias a la documentacion se puede "realizar cambios" dependiendo de
+nuevas demandas
+
+
+Ejemplo: Conversión de longitudes de millas, pies y pulgadas a metros
+
+"1. Analisis del problema"
+Las unidades de longitudes se usan mayormente en metros.
+
+"2. Especificaciones"
+Que hace el programa: convierte millas, pies, pulgadas a metros
+La relacion entre las entradas y salidas, para ello buscamos las conversiones
+1 milla = 1.609344 km
+1 pie = 30.48 cm
+1 pulgada = 2.54 cm
+
+La conversion sera: (Relacion entre los datos de salida y entrada)
+M = 1609.344*millas + 0.3048*pies + 0.0254*pulgadas
+
+"3. Diseño"
+Escribimos un pseudocodigo o Entrada-Calculo-Salida
+
+Leer la cantidad de millas
+Leer la cantidad de pies
+Leer la cantidad de pulgadas
+
+Realizar el calculo
+
+Mostrar en pantalla la variable metro
+
+"4.Implementacion"
+def main():
+    print ("Convierte medidas inglesas a sistema metrico")
+    millas = input("Cuatas millas?")
+    pies = input("Y cuantas pies?")
+    pulgadas = input("Y cuantas pulgadas?")
+
+    metros = 1609.344 * millas + 0.3048*pies + 0.0254*pulgadas
+    print ("La longitud en metros es: "+ str(metros))
+
+main()
+
+"5. Prueba"
+Probar las soluciones con distintos valores.
+
+"Al entregar un ejercicio debemos presentar el desarrollo completo
+"de todas las partes desde el analisis hasta el mantenimiento
+
+
+
+
